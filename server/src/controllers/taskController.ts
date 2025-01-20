@@ -19,7 +19,7 @@ export const getTasks = async (req: Request, res: Response): Promise<void> => {
     })
     res.json(tasks);
   } catch (err: any) {
-    res.status(500).json({ message: `Error Retrieving Projects : ${err.message}` });
+    res.status(500).json({ message: `Error Retrieving Tasks : ${err.message}` });
   }
 }
 
@@ -43,7 +43,7 @@ export const createTask = async (req: Request, res: Response): Promise<void> => 
     });
     res.status(201).json(newTask);
   } catch (err: any) {
-    res.status(500).json({ message: `Fetching task went wrong : ${err.message}` })
+    res.status(500).json({ message: `Creating task went wrong : ${err.message}` })
   }
 }
 

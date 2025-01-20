@@ -27,4 +27,4 @@ const ListView = ({ id, setIsModalNewTaskOpen }: Props) => {
   )
 }
 
-export default ListView
+export default ListView;
